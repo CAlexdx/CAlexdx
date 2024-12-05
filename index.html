@@ -1,34 +1,76 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CinePrime</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca do planeta perdido</title>
 </head>
 <body>
-  <header>CINEPRIME</header>
+    <main>
+        <!-- Passo 0 - Introdução -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Durante uma viagem pela galáxia, encontrei um misterioso mapa antigo que descrevia um planeta perdido, repleto de recursos inexplorados e tecnologias desconhecidas. Decidi seguir as pistas do mapa em busca deste planeta!</p>
+            <button class="btn-proximo" data-proximo="1">Planeta Zeta</button>
+            <button class="btn-proximo" data-proximo="2">Planeta Omega</button>
+        </div>
 
-  <section>
-    <div class="chamada-texto">
-      <h1>O RESGATE DO SOLDADO RYAN</h1>
-      <p>#drama #guerra</p>
-    </div>
+        <!-- Passo 1 - Planeta Zeta -->
+        <div class="passo" id="passo-1">
+            <p>Você chega ao Planeta Zeta e encontra uma estação espacial abandonada. O que fazer?</p>
+            <button class="btn-proximo" data-proximo="3">Explorar a estação</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e tentar outro planeta</button>
+        </div>
 
-    <div>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/1txxRnze1Zo"
-        title="Trailer de O Resgate do Soldado Ryan"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </section>
+        <!-- Passo 2 - Planeta Omega -->
+        <div class="passo" id="passo-2">
+            <p>No Planeta Omega, você chega a uma cidade abandonada. O mapa indica que a chave para o planeta perdido está escondida em um dos monumentos. O que fazer?</p>
+            <button class="btn-proximo" data-proximo="5">Investigar o monumento</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e tentar o Planeta Zeta</button>
+        </div>
+
+        <!-- Passo 3 - Explorar a estação em Zeta -->
+        <div class="passo" id="passo-3">
+            <p>Ao explorar a estação de Zeta, você encontra um mapa holográfico que revela a localização de uma entrada secreta para o planeta perdido!</p>
+            <button class="btn-proximo" data-proximo="6">Seguir para a entrada secreta</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e tentar outro planeta</button>
+        </div>
+
+        <!-- Passo 4 - Voltar -->
+        <div class="passo" id="passo-4">
+            <p>Você decide voltar para a nave e escolher outro planeta.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar para o início</button>
+        </div>
+
+        <!-- Passo 5 - Investigar o monumento em Omega -->
+        <div class="passo" id="passo-5">
+            <p>Você encontra inscrições antigas no monumento, que apontam para uma caverna subterrânea. Algo interessante pode estar lá.</p>
+            <button class="btn-proximo" data-proximo="6">Descer para a caverna</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e tentar o Planeta Zeta</button>
+        </div>
+
+        <!-- Passo 6 - Aventura continua -->
+        <div class="passo" id="passo-6">
+            <p>Você encontrou uma entrada secreta no Planeta Zeta ou uma caverna no Planeta Omega! Agora, você está mais perto do planeta perdido. Está pronto para seguir?</p>
+            <button class="btn-proximo" data-proximo="7">Explorar a entrada</button>
+        </div>
+
+        <!-- Passo 7 - Explorar a entrada para o planeta perdido -->
+        <div class="passo" id="passo-7">
+            <p>Dentro da entrada, você encontra uma cidade misteriosa. Isso pode ser a chave para a descoberta do planeta perdido!</p>
+            <button class="btn-proximo" data-proximo="8">Explorar a cidade</button>
+        </div>
+
+        <!-- Passo 8 - Fim da missão -->
+        <div class="passo" id="passo-8">
+            <p>Você descobriu a cidade perdida e seus segredos! Agora, é hora de explorar ainda mais ou voltar para a nave.</p>
+            <button class="btn-proximo" data-proximo="0">Iniciar novamente</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
