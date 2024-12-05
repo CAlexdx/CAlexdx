@@ -1,48 +1,36 @@
 body {
-    color: #E0E0E0; /* Texto em cinza claro para facilitar a leitura */
-    background-color: #1A1A1A; /* Fundo mais escuro para um efeito "militar" */
-    margin: 0;
-    font-family: "Chakra Petch", sans-serif;
-  }
-  
-  header {
-    background-color: #2D3E3F; /* Verde escuro com toque acinzentado */
-    padding: 20px;
-    font-size: 32px;
-    color: #A9D8B9; /* Verde claro para contraste */
-    text-align: center;
-    border-bottom: solid 2px #4B6A66; /* Borda inferior para definição */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  section {
-    background-color: #2F4F4F; /* Verde escuro com toque acinzentado */
-    padding: 80px 20px;
+    background-color: #0f0f2f; /* Cor de fundo mais escura, como o espaço */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #E0E0E0;
-  }
-  
-  .chamada-texto {
-    margin-right: 5%;
-    max-width: 300px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    color: #A9D8B9; /* Verde claro para o título */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  }
-  
-  p {
-    font-size: 18px;
-    color: #B0B0B0; /* Cinza mais claro para as hashtags */
-    opacity: 0.9;
-  }
-  
-  /* Estilizando o iframe */
-  iframe {
-    border: solid 3px #4B6A66; /* Borda em verde acinzentado ao redor do vídeo */
-    border-radius: 8px; /* Bordas arredondadas para suavizar o visual */
-  }
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/espaco-fundo.jpg'); /* Caminho da imagem de fundo */
+    background-size: cover;
+    background-position: center;
+}
+
+button {
+    background-color: #64A712;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+.passo {
+    display: none; /* Todos os passos são ocultados inicialmente */
+}
+
+.passo.ativo {
+    display: block; /* Apenas o passo ativo é exibido */
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+}
